@@ -6,12 +6,14 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <>
-      <ul style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', listStyleType: 'none', backgroundColor: 'blue'}}>
-      <li><Link>Home</Link></li>
-      <li><Link>Products</Link></li>
-      <li><Link>Contact</Link></li>
+      <ul style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', listStyleType: 'none', backgroundColor: 'gray', padding: '10px', }}>
 
-    </ul >
+        <li style={{ fontSize: '20px' }}><Link style={{ color: 'white' }} to={'/'}>Home</Link></li>
+        <li style={{ fontSize: '20px' }}><Link style={{ color: 'white' }} to={'products'}>Products</Link></li>
+        <li style={{ fontSize: '20px' }}><Link style={{ color: 'white' }} to={'contact'}>Contact</Link></li>
+        
+
+      </ul >
     </>
   )
 }
