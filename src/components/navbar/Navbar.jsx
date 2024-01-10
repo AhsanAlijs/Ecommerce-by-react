@@ -5,9 +5,11 @@ function Navbar() {
     return (
         <>
             <div className="navbar bg-[#002162e4] border-b-2 border-[#00000063] ">
+
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn  lg:hidden bg-transparent text-[#000] border-none">
+
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#ffffff34] rounded-box w-52">
@@ -27,9 +29,6 @@ function Navbar() {
                         <li><Link to={'products'} className='text-lg text-[#fff] font-bold'>Products</Link></li>
                     </ul>
                 </div>
-                {/* <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div> */}
             </div >
         </>
     )
