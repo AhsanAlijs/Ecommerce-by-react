@@ -1,9 +1,13 @@
 
 import React from 'react'
+import Routers from './config/routes/routes'
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Routers />
+    </>
   )
 }
 
