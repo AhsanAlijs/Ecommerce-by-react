@@ -6,6 +6,8 @@ import About from '../../screens/about/About'
 import Contacts from '../../screens/contact/Contacts'
 import Products from '../../screens/products/Products'
 import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import SingleProduct from '../../screens/single-product/SingleProduct'
 
 function Routers() {
     return (
@@ -17,7 +19,9 @@ function Routers() {
                     <Route path='about' element={<About />} />
                     <Route path='contact' element={<Contacts />} />
                     <Route path='products' element={<Products />} />
+                    <Route path='singleproduct/:id' element={<SingleProduct />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </>
     )
